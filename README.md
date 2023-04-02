@@ -11,7 +11,7 @@ SpringBoot 3.0.5,
 Java 17,
 PostgreSQL,
 Gradle,
-Hibernate,
+Hibernate and
 Swagger.
 
 ## Getting Started:

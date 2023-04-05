@@ -11,22 +11,30 @@ public class SubTaskEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @NotNull
-    Boolean isChecked;
+    private Boolean isChecked;
 
     @NotNull
     @Size(min = 1, max = 100)
-    String title;
+    private String title;
 
     public SubTaskEntity(Long id, Boolean isChecked, String title) {
         this.id = id;
-        this.isChecked = false;
+        this.isChecked = isChecked;
         this.title = title;
     }
 
     public SubTaskEntity() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Boolean getChecked() {

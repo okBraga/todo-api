@@ -17,6 +17,7 @@ public class SubTaskService {
     }
 
     public SubTaskEntity create(SubTaskEntity subTask) {
+        subTask.setChecked(false);
         return subTaskRepository.save(subTask);
     }
 
